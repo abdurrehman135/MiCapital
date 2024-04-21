@@ -1,0 +1,43 @@
+
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="css/style_home.css" type="text/css" rel="stylesheet">
+
+  <!-- Browser Tab title -->
+  <title>CPS510 Lab</title>
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-light" style="background-color: #3EA055;">
+    <!--<a class="navbar-brand" href="#" ><img src="seed_logo.png" style="height: 40px; width: 200px;" alt="SEEDLabs"></a>-->
+  </nav>
+  <p>For our Demo Site, try:<br>Client1 Login: msiddiqui<br>Client2 Pass: 123</p>
+  <div class="container  col-lg-4 col-lg-offset-4" style="padding-top: 50px; text-align: center;">
+    <h2><b>Bank User Login</b></h2><hr><br>
+    <div class="container">
+      <form action="CPS510_home.php" method="post">
+        <div class="input-group mb-3 text-center">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="uname">USERNAME</span>
+          </div>
+          <input type="text" class="form-control" placeholder="username" name="username" aria-label="Username" aria-describedby="uname">
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="pwd">PASSWORD </span>
+          </div>
+          <input type="password" class="form-control" placeholder="password" name="password" aria-label="Username" aria-describedby="pwd">
+        </div>
+        <br>
+        <button type="submit" class="button btn-success btn-lg btn-block">Login</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

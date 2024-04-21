@@ -1,0 +1,32 @@
+/*
+We have to drop tables so that the ones with foreign key references are dropped first.
+We can't have a table with a reference to a key that doesn't exist.
+*/
+DROP TABLE TRANSACTIONS;
+DROP TABLE TRANSTYPEID;
+DROP TABLE SAVINGSACCOUNT;
+DROP TABLE CHEQUINGACCOUNT;
+DROP TABLE PHONENUMBERS;
+DROP TABLE PHONETYPEID;
+DROP TABLE ADDRESSES;
+DROP TABLE ADDRESSTYPEID;
+DROP TABLE PASSSALT;
+DROP TABLE PASSHASH;
+DROP TABLE CLIACCT;
+DROP TABLE ACCOUNTS;
+DROP TABLE CLIENTS;
+DROP TABLE ONLINEUSER;
+/*
+Technically we don't need to drop the sequences, but we should if we want to start the count over again.
+*/
+DROP SEQUENCE userID_Seq;
+DROP SEQUENCE cliID_Seq;
+DROP SEQUENCE acctID_Seq;
+/*
+Drop the VIEWS as well
+*/
+DROP VIEW ALLACCOUNTS;
+DROP VIEW CLIACCTREL;
+DROP VIEW CLIADDRREL;
+DROP VIEW CLIPHONEREL;
+DROP VIEW CLIUSERREL;
